@@ -17,12 +17,14 @@ public abstract class PlayingCard {
 	public abstract String toString();
 	
 	// returns the suit of this card
-	public int getSuit() {
-		//TODO
-	}
-	
-	// returns the rank of this card
-	public int getRank() {
-		//TODO
-	}
+ public int getSuit() 
+ {
+  return suit;
+ }
+ 
+ // returns the rank of this card
+ public int getRank() 
+ {
+  return rank;
+ }
 }
