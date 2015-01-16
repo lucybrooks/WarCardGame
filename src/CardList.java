@@ -1,15 +1,15 @@
-import java.util.*;
+import java.uimport java.util.*;
 
 public class CardList
 {
   //feilds - cards, random
-  private ArrayList<String> list;
-  private Random random=newRandom();
+  private ArrayList<Card> list;
+  private Random random=new Random();
   
   //Constructors CardList()
   public CardList()
   {
-     ArrayList<String> list=new ArrayList[0];
+    list=new ArrayList<Card>();
   }
        
   //Accessors size()
@@ -29,14 +29,16 @@ public class CardList
     list.add(c);
   }
   //takeCardFromTop
-  public void takeCardFromTop(Card c)
+  public Card takeCardFromTop()
   {
-    list.remove(c);
+    return list.remove(0);
   }
   //removeRandomCard
-  public void removeRandomCard(Card c)
+  public Card removeRandomCard()
   {
-    int randCardNum=random.nextInt(card.size());
+    int randCardNum=random.nextInt(list.size());
+    Card k=list.get(randCardNum);
     list.remove(randCardNum);
+    return k;
   }
 }
