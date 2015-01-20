@@ -11,7 +11,8 @@ public abstract class PlayingCard {
 	private int rank;
 	
 	public PlayingCard(int cardSuit, int cardRank) {
-		//TODO
+		suit=cardSuit;
+		rank=cardRank;
 	}
 		
 	public abstract String toString();
