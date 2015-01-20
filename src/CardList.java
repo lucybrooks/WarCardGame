@@ -1,4 +1,4 @@
-import java.uimport java.util.*;
+import java.util.*;
 
 public class CardList
 {
@@ -21,17 +21,23 @@ public class CardList
   //Mutators - addCardToBottom
   public void addCardToBottom(Card c)
   {
-    list.add(c);
+    list.add(0, c);
   }
   //addCardToTop
   public void addCardToTop(Card c)
   {
     list.add(c);
   }
+  //getTopCard
+  public Card getTopCard()
+  {
+    return list.get( list.size()-1 );
+  }
+  
   //takeCardFromTop
   public Card takeCardFromTop()
   {
-    return list.remove(0);
+    return list.remove(list.size()-1);
   }
   //removeRandomCard
   public Card removeRandomCard()
