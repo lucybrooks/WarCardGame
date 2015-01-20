@@ -11,9 +11,9 @@ public class CardDeck extends CardList
     super();
     suits=4;
     ranks=13;
-    for(int suit =1; suit<suits; suit++)
+    for(int suit =1; suit<=suits; suit++)
     {
-      for(int rank=1; rank<ranks; rank++)
+      for(int rank=1; rank<=ranks; rank++)
       {
         addCardToBottom(new Card(suit, rank));
       }
